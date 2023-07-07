@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #44474A;
+}
+
+/* body{
+    background-image: url('../img/banner_bg.jpg');
+    background-size: cover;
+} */
+
+
+
+.lyr{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+/*Navbar*/
+.navs{
+    background-color: white;
+    z-index: 3;
+    width: 90%;
+    margin: auto;
+    border-radius:20px ;
+    height: 80px;
+}
+.navs li,a,button{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#44474A;
+    text-decoration: none;
+    padding: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px 30%;
+}
+.logo{
+    cursor: pointer;
+    /* margin-right: auto; */
+  
+}
+.navlink{
+    list-style: none;
+}
+.navlink li{
+display: inline-block;
+padding: 0px 20px;
+}
+.navlink li a{
+    transition: all 0.3s ease 0s;
+    
+}
+.navlink li a:hover{
+    color: #D12149;
+    text-decoration: none;
+}
+button{
+    padding: 9px 25px;
+    color: white;
+    background-color: #D12149;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+
+
+
+.loginform{
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    background-color:rgba(209,33,73,0.5);
+    margin-top: 50px;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:  rgb(209,33,73);
+  
+    
+}
+
+.logininfo {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+.loginform h2{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 40px
+    
+}
+
+.loginform label{
+    color: white;
+}
+
+.loginform button{
+    margin-top: 0px;
+    color: white;
+    font-weight:500px ;
+    padding: 20px;
+    border:  rgb(209,33,73) solid 2px;
+    border-radius: 20px;
+    
+    
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    border-bottom: 2px solid black;
+   
+}
+
+
+.remember-forget a{
+    color: black;
+}
+
+
+.input-Email,
+.input-password {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  padding: 12px;
+  border-radius:5px;
+
+
+}
+
+
+
+
+
+.input-password label{
+    position: relative;
+    top: -35px;
+    left: -1px;
+    transition: top .5s;
+}
+.input-Email label{
+    position: relative;
+    top: -35px;
+    left: -5px;
+    transition: top .5s;
+    
+}
+
+.loginform input:focus~label{
+    top: -60px;
+}
+
+.loginform input:focus{
+    outline: none;
+}
+
+
+
+.loginform button:focus{
+    outline: none;
+}
+
+
+
+.loginform input:hover ~label{
+    top: -60px;
+}
+
+h6{
+    padding-top: 10px;
+    color: white;
+}
+
+.CreatAcc a{
+    color: black;
+}

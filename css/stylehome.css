@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+    
+}
+
+/*Navbar*/
+.navs{
+    background-color: white;
+    z-index: 3;
+    /* width: 90%; */
+    margin: auto;
+    /* border-radius:20px ; */
+    height: 80px;
+}
+.navs li,a,button{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#44474A;
+    text-decoration: none;
+    padding: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px 30%;
+}
+.logo{
+    cursor: pointer;
+    /* margin-right: auto; */
+  
+}
+.navlink{
+    list-style: none;
+}
+.navlink li{
+display: inline-block;
+padding: 0px 20px;
+}
+.navlink li a{
+    transition: all 0.3s ease 0s;
+    
+}
+.navlink li a:hover{
+    color: #D12149;
+    text-decoration: none;
+}
+button{
+    padding: 9px 25px;
+    color: white;
+    background-color: #D12149;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.pfpimg{
+  width: 50px;
+  margin: 10px;
+}
+
+.pfpimgb{
+    border-radius: 50%;
+    border: solid 2px #D12149 ;
+  }
+
+
+
+
+.containers{
+    /* height: 500px; */
+    margin: auto;
+    /* background-color: rgba(0,0,0,0.5); */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 500px;
+     grid-template-rows: 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    color: white;
+}
+
+.it1{
+    background-color: #24252A;
+    /* grid-row: 1/3; */
+     position: sticky; 
+    /* top: 0px; */
+    
+   
+   
+    
+}
+
+.it2{
+    margin-top: 50px;
+    background-color: #24252A;
+     position: sticky;
+    top: 10px;  
+}
+
+
+
+
+
+
+
+
+
+
+
+.comm{
+    width: 100%;
+    height: 100%; 
+
+    /* background-color: #e7effd;  */
+}
+.inpfile{
+display: none;
+}
+.label{
+    margin: 20px;
+    height: 150px;
+    width: 250px;
+    border-radius: 6px;
+    border: 2px dashed #D12149;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    color: #D12149;
+    padding: 50px;
+}
+
+
+.label:hover{
+    color:gray;
+    border: 2px dashed #777;
+}
+
+.posthead{
+    margin: auto;
+    text-align: center;
+    color: #D12149;
+}
+
+.card{
+    border-radius: 20px;
+}
+
+
+.it2 .container{
+
+    height: 100px;
+    width: 600px;
+}
+
+.it2 h2,strong{
+    color: #D12149;
+}
+
+.postrect:hover{
+    color:#D12149;
+}

@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+    /* scroll-behavior: smooth; */
+}
+
+/*Navbar*/
+.navs{
+    background-color: white;
+    z-index: 3;
+    width: 90%;
+    margin: auto;
+    border-radius:20px ;
+    height: 80px;
+}
+.navs li,a,button{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#44474A;
+    text-decoration: none;
+    padding: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px 30%;
+}
+.logo{
+    cursor: pointer;
+    /* margin-right: auto; */
+  
+}
+.navlink{
+    list-style: none;
+}
+.navlink li{
+display: inline-block;
+padding: 0px 20px;
+}
+.navlink li a{
+    transition: all 0.3s ease 0s;
+    
+}
+.navlink li a:hover{
+    color: #D12149;
+    text-decoration: none;
+}
+button{
+    padding: 9px 25px;
+    color: white;
+    background-color: #D12149;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+/*headcontent*/
+.content{
+    color: white;
+    height:500px ;
+}
+.content a{
+    background-color: #D12149;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+}
+
+
+/*aboutus*/
+.About-us{
+  background-color: white;
+  padding-top:50px;
+  padding-bottom:50px;
+  margin: auto;
+  display: grid;
+  color: white;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap:20px;
+  
+}
+
+.abtcnt{
+    margin: auto;
+    
+    padding-left: 30%;
+    width: 90%;
+}
+
+.abtcnt h2{
+    color: black;
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 600;
+    padding-bottom: auto;
+}
+
+.abtcnt p{
+    color:#D12149;
+    font-weight: 500;
+    width: 82%;
+    line-height: 1.5;
+   
+
+}
+
+.abtimg{
+    margin: auto;
+     margin-left: 20px;
+    width: 450px;
+    height: 300px;
+    display: block;
+   
+
+}
+
+
+/*WhyBenfi*/
+.WhyBenfi{
+    background-color: blue;
+    color: white;
+    background-image: url("../img/Why.jpeg");
+    background-size:100%  100%;
+    height: 600px;  
+    background-repeat: no-repeat;
+    position: relative;
+    
+    
+}
+.lyr2{
+    background-color: rgba(209,33,73,0.7);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+.it1{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.it1 a{
+    text-decoration: none;
+    color:white;
+}
+
+.it2{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    font-size: 150px;
+    font-weight: 900;
+    color:#44474A;
+    line-height:120px;
+}
+.it3{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+   
+}
+
+
+/*contact*/
+.contact{
+    /* background-color: blue; */
+}
+
+.cont{
+    width: 80%;
+    margin: auto;
+    /* background-color: red; */
+   padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    grid-column-gap: 20px;
+    
+}
+
+.cont p{
+    padding-right: 30%;
+}
+
+.cont a{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+   
+  
+  } 
+
+.lis{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.lis li{
+margin-left: -50px;
+}
+
+
+/*last*/
+.last{
+    height: 50px;
+    
+}
+.lastcont{
+    padding: 10px;
+    border-top: #D12149 solid 2px;
+    color: white;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.lastcont i,span{
+    color: #D12149;
+}
+
+
+
+
