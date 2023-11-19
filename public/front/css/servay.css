@@ -1,0 +1,119 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #24252A;
+    /* background-color: #24252A; */
+    /* scroll-behavior: smooth; */
+}
+
+.container{
+ background-color: aliceblue;
+ margin: auto;
+ margin-top: 20px;
+ padding: 40px;
+ width: 80%;
+ border-radius: 20px;
+ border: #D12149 solid 4px;
+ font-size: 1.3vw;
+}
+
+/* input{
+    margin-bottom: 30px;
+} */
+
+select{
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2vw;
+    width: 60vh;
+}
+
+input{
+    height: 3vh;
+    
+}
+
+textarea{
+    margin-top: 20px;
+    width: 80vh;
+    padding: 10px;
+   
+}
+.q{
+    margin-bottom: 5vh;
+}
+
+
+
+
+
+
+
+
+
+
+/*Navbar*/
+.navs{
+    background-color: white;
+    z-index: 3;
+    /* width: 90%; */
+    margin: auto;
+    /* border-radius:20px ; */
+    height: 80px;
+}
+.navs li,a,button{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#44474A;
+    text-decoration: none;
+    padding: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px 30%;
+}
+.logo{
+    cursor: pointer;
+    user-select: none;
+    /* margin-right: auto; */
+  
+}
+.navlink{
+    list-style: none;
+}
+.navlink li{
+display: inline-block;
+padding: 0px 20px;
+}
+.navlink li a{
+    transition: all 0.3s ease 0s;
+    
+}
+.navlink li a:hover{
+    color: #D12149;
+    text-decoration: none;
+}
+button{
+    padding: 9px 25px;
+    color: white;
+    background-color: #D12149;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.pfpimg{
+    width: 50px;
+    margin: 10px;
+}
+  
+.pfpimgb{
+      border-radius: 50%;
+      border: solid 2px #D12149 ;
+}

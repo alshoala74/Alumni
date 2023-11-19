@@ -1,0 +1,125 @@
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+    /* scroll-behavior: smooth; */
+}
+
+/*Navbar*/
+.navs{
+    background-color: white;
+    z-index: 3;
+    width: 90%;
+    margin: auto;
+    border-radius:20px ;
+    height: 80px;
+}
+.navs li,a,button{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#44474A;
+    text-decoration: none;
+    padding: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px 30%;
+}
+.logo{
+    cursor: pointer;
+    /* margin-right: auto; */
+  
+}
+.navlink{
+    list-style: none;
+}
+.navlink li{
+display: inline-block;
+padding: 0px 20px;
+}
+.navlink li a{
+    transition: all 0.3s ease 0s;
+    
+}
+.navlink li a:hover{
+    color: #D12149;
+    text-decoration: none;
+}
+header button{
+    padding: 9px 25px;
+    color: white;
+    background-color: #D12149;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+section{
+ 
+    background-color: white;
+    width: 80%;
+    margin: auto; 
+    z-index: 1;
+    margin-top: 50px;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+   
+}
+
+h2{
+    color: #D12149;
+    font-size: 3.4rem;
+    max-width: 50.2rem;;
+    font-weight: 400;
+    text-align: left;
+
+}
+
+p{
+    font-size: 1.2rem;
+    max-width: 60.2rem;;
+    text-align: left;
+    vertical-align: baseline;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+img{
+    max-width: 40%;
+    margin: auto;
+    justify-content: center;
+    margin: 20px 20px;
+
+ 
+    
+}
+
+section button{
+    padding: 9px 25px;
+    color: white;
+    background-color: #D12149;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-bottom: 30px;
+
+}

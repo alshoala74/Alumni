@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* * {
+    box-sizing: border-box;
+  } */
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: #24252A;
+    
+  } 
+
+/*Navbar*/
+.navs{
+    background-color: white;
+    z-index: 3;
+    width: 90%;
+    margin: auto;
+    border-radius:20px ;
+    height: 80px;
+}
+.navs li,a,button{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#44474A;
+    text-decoration: none;
+    padding: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px 30%;
+}
+.logo{
+    cursor: pointer;
+    /* margin-right: auto; */
+    user-select: none;
+}
+.navlink{
+    list-style: none;
+}
+.navlink li{
+display: inline-block;
+padding: 0px 20px;
+}
+.navlink li a{
+    transition: all 0.3s ease 0s;
+    
+}
+.navlink li a:hover{
+    color: #D12149;
+    text-decoration: none;
+}
+button{
+    padding: 9px 25px;
+    color: white;
+    background-color: #D12149;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+ 
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin:auto;
+    
+   
+  }
+  
+  .card {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    
+    
+  }
+  
+  .card-header img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 150px;
+    padding: 20px;
+    margin-right: 10px; /* Add margin-right to create spacing on the right */
+    overflow-wrap: break-word; /* or word-break: break-word; */
+  }
+
+  .card-body h5{
+    margin-bottom: 0px;
+  }
+  
+
+  
+  .card-body p  {
+    max-width: 100%;
+    margin-right: 0;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+  }
+
+
+  .details{
+    margin-top: 0;
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.6);
+  }
