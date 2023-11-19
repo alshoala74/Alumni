@@ -1,6 +1,6 @@
 # Alumni Project README
 
-![Alt Text](index.jpg)
+![Alt Text](index.png)
 
 This README provides important information about the Alumni project. It includes details about the technologies used, required applications, project structure, and instructions for setting up the project.
 
