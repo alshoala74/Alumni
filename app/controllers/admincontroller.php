@@ -146,7 +146,7 @@ public function __construct(){
             move_uploaded_file($photo_tmp, $photo_destination);
             $data=['name'=>$_POST['name'],'story'=>$_POST['story'],'degree'=>$_POST['degree'],'workplace'=>$_POST['workplace'],'pic'=>$photo_name];
         }else{
-            $data=['name'=>$_POST['name'],'story'=>$_POST['story']];
+            $data=['name'=>$_POST['name'],'story'=>$_POST['story'],'degree'=>$_POST['degree'],'workplace'=>$_POST['workplace']];
         }
         $sucess=new sucess();
         $id=['id'=>$_POST['id']];
@@ -188,7 +188,7 @@ public function __construct(){
         // Move the uploaded photo to the destination folder
         move_uploaded_file($photo_tmp, $photo_destination);
         $users=new users();
-        $data=['username'=>$_POST['username'],'email'=>$_POST['email'],'password'=>$_POST['password'],'pfp'=>$photo_name,'id_num'=>$_POST['id_num'],'major'=>$_POST['major']];
+        $data=['username'=>$_POST['username'],'name'=>$_POST['name'],'email'=>$_POST['email'],'password'=>$_POST['password'],'pfp'=>$photo_name,'id_num'=>$_POST['id_num'],'major'=>$_POST['major']];
         $users=$users->Addusers($data);
         if($data){
             helpers::redirect('admin/users');
@@ -211,9 +211,9 @@ public function __construct(){
             $photo_destination = 'front/img/' . $photo_name;
             // Move the uploaded photo to the destination folder
             move_uploaded_file($photo_tmp, $photo_destination);
-            $data=['username'=>$_POST['username'],'email'=>$_POST['email'],'id_num'=>$_POST['id_num'],'major'=>$_POST['major'],'password'=>$_POST['password'],'pfp'=>$photo_name];
+            $data=['username'=>$_POST['username'],'name'=>$_POST['name'],'email'=>$_POST['email'],'id_num'=>$_POST['id_num'],'major'=>$_POST['major'],'password'=>$_POST['password'],'pfp'=>$photo_name];
         }else{
-            $data=['username'=>$_POST['username'],'email'=>$_POST['email'],'id_num'=>$_POST['id_num'],'major'=>$_POST['major'],'password'=>$_POST['password']];
+            $data=['username'=>$_POST['username'],'name'=>$_POST['name'],'email'=>$_POST['email'],'id_num'=>$_POST['id_num'],'major'=>$_POST['major'],'password'=>$_POST['password']];
         }
         $users=new users();
         $id=['user_id'=>$_POST['user_id']];

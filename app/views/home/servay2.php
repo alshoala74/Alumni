@@ -9,7 +9,8 @@
 </head>
 <body>
     <!-- <header> -->
-    <header class="navs">
+<section>
+ <header class="navs">
       <img class="logo"src="<?=PATH;?>front/img/header-logo.svg" alt="img">
       <nav>
         <ul class="navlink">
@@ -21,8 +22,8 @@
         </ul>
       </nav>
       <a href="<?=PATH;?>home/login" class="hvr-grow"><button>Sign-In</button></a>
-
 </header>
+</section>
     <!-- </header> -->
     <div class="container">
         <form  method="post" action="<?=PATH;?>home/postservay/<?php echo $id;?>">
@@ -38,7 +39,7 @@
             </div>
 
             <div class="q">
-                <label> Your employee's programme at UTB:*</label><br>
+                <label> Alumni program programme at UTB:*</label><br>
                 <select name="q5" required>
                     <option value="BS in Accounting and Finance">BS in Accounting and Finance</option>
                     <option value="BS in International Business">BS in International Business</option>
@@ -55,15 +56,15 @@
             <div class="q">
             <label class="qua" for="lname"> When did you graduate? *</label><br>
             <input type="radio" name="q6" value="Less than 5" required>
-            <label for="vehicle1"> 1 year</label><br>
+            <label for="vehicle1"> 1 year ago</label><br>
             <input type="radio" name="q6" value="2-4 years" required>
-            <label for="vehicle2"> 2-4 years </label><br>
+            <label for="vehicle2"> 2-4 years ago</label><br>
             <input type="radio" name="q6" value="More than 5 years" required>
-            <label for="vehicle3"> More than 5 years</label><br>
+            <label for="vehicle3"> More than 5 years ago</label><br>
             </div>
         
             <div class="q">
-            <label for="lname">Does Online Alumni Club help you in your career ? *</label><br>
+            <label for="lname">Does Online Alumni Community help you in your career ? *</label><br>
             <input type="radio"  name="q7" value="Strongly Disagree" required>
             <label> Strongly Disagree</label><br>
             <input type="radio" name="q7" value="Disagree" required>
@@ -77,7 +78,7 @@
             </div>
 
             <div class="q">
-            <label for="lname"> Do you recomend other Alumni to join the club *</label><br>
+            <label for="lname"> Do you recommend other Alumni to join the Community ?*</label><br>
             <input type="radio"  name="q8" value="Strongly Disagree" required>
             <label> Strongly Disagree</label><br>
             <input type="radio" name="q8" value="Disagree" required>
@@ -91,7 +92,7 @@
             </div>
 
             <div class="q">
-            <label for="q9"> What do you want add to the Online Alumni Club ?*</label><br>
+            <label for="q9"> What do you want add to the Online Alumni Community ?*</label><br>
             <textarea name="q9" rows="4" cols="50" required></textarea>
             </div>
 

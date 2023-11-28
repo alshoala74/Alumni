@@ -9,7 +9,8 @@
 </head>
 <body>
     <!-- <header> -->
-    <header class="navs">
+<section>
+ <header class="navs">
       <img class="logo"src="<?=PATH;?>front/img/header-logo.svg" alt="img">
       <nav>
         <ul class="navlink">
@@ -21,8 +22,9 @@
         </ul>
       </nav>
       <a href="<?=PATH;?>home/login" class="hvr-grow"><button>Sign-In</button></a>
-
 </header>
+</section>
+
     <!-- </header> -->
     <div class="container">
         <form  method="post" action="<?=PATH;?>home/postservay/<?php echo $id;?>">
@@ -65,7 +67,7 @@
             </div>
         
             <div class="q">
-            <label for="q7">They demonstrate depth of knowledge and mastery of specialization? *</label><br>
+            <label for="q7">Do they demonstrate depth of knowledge and mastery of specialization ? *</label><br>
             <input type="radio"  name="q7" value="Strongly Disagree" required>
             <label> Strongly Disagree</label><br>
             <input type="radio" name="q7" value="Disagree" required>
@@ -79,7 +81,7 @@
             </div>
 
             <div class="q">
-            <label for="q8"> They demonstrate effective Communication Skills *</label><br>
+            <label for="q8">Do they demonstrate effective Communication Skills ?*</label><br>
             <input type="radio"  name="q8" value="Strongly Disagree" required>
             <label> Strongly Disagree</label><br>
             <input type="radio" name="q8" value="Disagree" required>
@@ -93,7 +95,7 @@
             </div>
 
             <div class="q">
-            <label for="q9"> How effectivly UTB Alumni in the work ? *</label><br>
+            <label for="q9">How effective are UTB Alumni at work ? *</label><br>
             <textarea name="q9"rows="4" cols="50" required></textarea>
             </div>
 

@@ -47,7 +47,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Job Name</label>
-                        <input name="jobname"type="text" class="form-control" placeholder="Enter News Title">
+                        <input name="jobname"type="text" class="form-control" placeholder="Enter Job Name">
                       </div>
                     </div>
                   </div>
@@ -57,7 +57,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Company Name</label>
-                        <input name="companyname"type="text" class="form-control" placeholder="Enter News Title">
+                        <input name="companyname"type="text" class="form-control" placeholder="Enter Company Name">
                       </div>
                     </div>
                   </div>
@@ -67,7 +67,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Place</label>
-                        <input name="place"type="text" class="form-control" placeholder="Enter News Title">
+                        <input name="place"type="text" class="form-control" placeholder="Enter Place">
                       </div>
                     </div>
                   </div>
@@ -77,7 +77,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Degree</label>
-                        <input name="degree"type="text" class="form-control" placeholder="Enter News Title">
+                        <input name="degree"type="text" class="form-control" placeholder="Enter the Degree">
                       </div>
                     </div>
                   </div>

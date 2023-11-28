@@ -13,25 +13,27 @@
 </head>
 <body>
 
+<!-- <header> -->
 <section>
-    <header class="navs">
-        <img class="logo"src="<?=PATH;?>front/img/header-logo.svg" alt="img">
-        <nav>
-            <ul class="navlink">
-                <li><a href="<?=PATH;?>user/index">Home</a></li>
-                <li><a href="<?=PATH;?>user/alumni">Almunis</a></li>
-                <li><a href="<?=PATH;?>user/jobbord">Job Board</a></li>
-            </ul>
-        </nav>
-        <a href="<?=PATH;?>user/userprofile" >
-        <img class="pfpimgb pfpimg hvr-grow" src="<?=PATH;?>front/img/<?php echo $data->pfp;?>" alt="pfp" onclick="showLogoutPopup()">
-        </a>
-    </header>
+ <header class="navs">
+      <img class="logo"src="<?=PATH;?>front/img/header-logo.svg" alt="img">
+      <nav>
+        <ul class="navlink">
+            <li><a href="<?=PATH;?>user/index">Alumni Community</a></li>
+            <li><a href="<?=PATH;?>user/alumni">Alumni Directory</a></li>
+            <li><a href="<?=PATH;?>user/jobbord">Job Board</a></li>
+        </ul>
+      </nav>
+      <a href="<?=PATH;?>user/userprofile" >
+      <img class="pfpimgb pfpimg hvr-grow" src="<?=PATH;?>front/img/<?php echo $data->pfp;?>" alt="pfp" onclick="showLogoutPopup()">
+      </a>        
+</header>
 </section>
+
 
 <section class="cont">
             <div class="search-wrapper"> 
-                    <label for="search">Search Student</label>
+                    <label for="search">Search Alumni Directory</label>
                     <h3>Enter Name or Email</h3>
                     <div class="body2">
                 <div class="box">
@@ -50,7 +52,7 @@
                     <a style="text-decoration: none;" user-cards href="<?=PATH;?>user/searchuserprofile/<?php echo $pa['username']; ?>" class="user-cards" >
                 <?php endif; ?>
                 <div class="card">
-                    <img class="pfpimg hvr-grow" src="<?=PATH;?>front/img/<?php echo $pa['pfp']; ?>" alt="pfp">
+                    <img class="img hvr-grow" src="<?=PATH;?>front/img/<?php echo $pa['pfp']; ?>" alt="pfp">
                     <div data-header class="header"><?php echo $pa['username']; ?></div>
                     <div data-body class="body"><?php echo $pa['email']; ?></div>
                     <div data-body2 class="body"><?php echo $pa['id_num']; ?></div>

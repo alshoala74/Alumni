@@ -16,20 +16,19 @@
 
 <!-- <header> -->
 <section>
-    <header class="navs">
-      <img class="logo"src="<?=PATH;?>front/img/header-logo.svg" alt="img">
-      <nav>
-        <ul class="navlink">
-            <li><a href="<?=PATH;?>user/index">Home</a></li>
-            <li><a href="<?=PATH;?>user/alumni">Almunis</a></li>
-            <li><a href="<?=PATH;?>user/jobbord">Job Board</a></li>
-          <!-- <li><a href="#">Events</a></li> -->
-        </ul>
-      </nav>
-      <a href="<?=PATH;?>user/userprofile" >
-      <img class="pfpimgb pfpimg hvr-grow" src="<?=PATH;?>front/img/<?php echo $data->pfp;?>" alt="pfp" onclick="showLogoutPopup()">
-      </a>
-    </header>
+        <header class="navs">
+            <img class="logo"src="<?=PATH;?>front/img/header-logo.svg" alt="img">
+            <nav>
+                <ul class="navlink">
+                <li><a href="<?=PATH;?>user/index">Alumni Community</a></li>
+                <li><a href="<?=PATH;?>user/alumni">Alumni Directory</a></li>
+                <li><a href="<?=PATH;?>user/jobbord">Job Board</a></li>
+                </ul>
+            </nav>
+            <a href="<?=PATH;?>user/userprofile" >
+            <img class="pfpimgb pfpimg hvr-grow" src="<?=PATH;?>front/img/<?php echo $data->pfp;?>" alt="pfp" onclick="showLogoutPopup()">
+            </a>        
+        </header>
 </section>
 <!-- </header> -->
 
@@ -72,12 +71,12 @@
       <div class="container">
         <?php foreach($events as $ev): ?>
         <div class="row">
-          <div class="col-2 text-right">
+          <div class="col-4 text-right">
             <h1 class="display-4"><span class="badge badge-secondary"><?php echo $ev['formatted_day_number'];?></span></h1>
             <h2><?php echo $ev['formatted_month'];?></h2>
           </div>
           <div class="col-5">
-            <h3 class="text-uppercase"><strong><?php echo $ev['eventname'];?></strong></h3>
+            <h3 class="text-uppercase evname"><strong><?php echo $ev['eventname'];?></strong></h3>
             <ul class="list-inline">
                 <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php echo $ev['formatted_day'];?></li>
               <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i><?php echo $ev['timestart'];?> - <?php echo $ev['timeend'];?></li>

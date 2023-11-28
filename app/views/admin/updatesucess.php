@@ -47,7 +47,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Name</label>
-                        <input name="name"type="text" class="form-control" value="<?= $data->name; ?>" placeholder="Enter News Title" >
+                        <input name="name"type="text" class="form-control" value="<?= $data->name; ?>" placeholder="Enter Name" >
                       </div>
                     </div>
                   </div>
@@ -57,7 +57,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Degree</label>
-                        <input name="degree"type="text" class="form-control" value="<?= $data->degree; ?>" placeholder="Enter News Title" >
+                        <input name="degree"type="text" class="form-control" value="<?= $data->degree; ?>" placeholder="Enter Degree" >
                       </div>
                     </div>
                   </div>
@@ -67,7 +67,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Work Place</label>
-                        <input name="workplace"type="text" class="form-control" value="<?= $data->workplace; ?>" placeholder="Enter News Title" >
+                        <input name="workplace"type="text" class="form-control" value="<?= $data->workplace; ?>" placeholder="Enter Work Place" >
                       </div>
                     </div>
                   </div>
@@ -76,7 +76,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Story</label>
-                        <textarea value="<?= $data->story; ?>" name="story" type="text" class="form-control" rows="3" placeholder="Enter Disc..."><?= $data->story; ?></textarea>
+                        <textarea value="<?= $data->story; ?>" name="story" type="text" class="form-control" rows="3" placeholder="Enter Story..."><?= $data->story; ?></textarea>
                       </div>
                     </div>
                   </div>

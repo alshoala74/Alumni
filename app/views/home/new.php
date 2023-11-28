@@ -16,24 +16,26 @@
     <link rel="icon" href="<?=PATH;?>front/img/icon.png" >
 </head>
 <body>
-    <header class="navs">
-        <img class="logo"src="<?=PATH;?>front/img/header-logo.svg" alt="img">
-        <nav>
-          <ul class="navlink">
+
+<section>
+ <header class="navs">
+      <img class="logo"src="<?=PATH;?>front/img/header-logo.svg" alt="img">
+      <nav>
+        <ul class="navlink">
           <li><a href="<?=PATH;?>home">Home</a></li>
           <li><a href="<?=PATH;?>home/news">News</a></li>
           <li><a href="<?=PATH;?>home/sucess">Success Stories</a></li>
           <li><a href="<?=PATH;?>home/events">Events</a></li>
           <li><a href="<?=PATH;?>home/more">More</a></li>
-          </ul>
-        </nav>
-        <a href="<?=PATH;?>home/login" class="hvr-grow"><button>Sign-In</button></a>
-  
-      </header>
+        </ul>
+      </nav>
+      <a href="<?=PATH;?>home/login" class="hvr-grow"><button>Sign-In</button></a>
+</header>
+</section>
 
       
 
-      <section>
+      <section class="cont">
         <?php if(isset($new)): ?>
           <h2><?php echo  $new->title; ?></h2>
           <h5><?php echo  $new->date; ?></h2>

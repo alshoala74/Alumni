@@ -47,7 +47,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Job Name</label>
-                        <input name="jobname"type="text" class="form-control" value="<?= $data->jobname; ?>" placeholder="Enter News Title" >
+                        <input name="jobname"type="text" class="form-control" value="<?= $data->jobname; ?>" placeholder="Enter Job Name" >
                       </div>
                     </div>
                   </div>
@@ -56,7 +56,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Compnay Name</label>
-                        <input name="companyname"type="text" class="form-control" value="<?= $data->companyname; ?>" placeholder="Enter News Title" >
+                        <input name="companyname"type="text" class="form-control" value="<?= $data->companyname; ?>" placeholder="Enter Company Name" >
                       </div>
                     </div>
                   </div>
@@ -65,7 +65,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Place</label>
-                        <input name="place"type="text" class="form-control" value="<?= $data->place; ?>" placeholder="Enter News Title" >
+                        <input name="place"type="text" class="form-control" value="<?= $data->place; ?>" placeholder="Enter Place" >
                       </div>
                     </div>
                   </div>
@@ -74,7 +74,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Degree</label>
-                        <input name="degree"type="text" class="form-control" value="<?= $data->degree; ?>" placeholder="Enter News Title" >
+                        <input name="degree"type="text" class="form-control" value="<?= $data->degree; ?>" placeholder="Enter Degree" >
                       </div>
                     </div>
                   </div>

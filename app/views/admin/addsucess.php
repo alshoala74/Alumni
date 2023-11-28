@@ -47,7 +47,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Name</label>
-                        <input name="name"type="text" class="form-control" placeholder="Enter News Title">
+                        <input name="name"type="text" class="form-control" placeholder="Enter Name">
                       </div>
                     </div>
                   </div>
@@ -57,7 +57,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Alumni Student ID</label>
-                        <input name="id"type="text" class="form-control" placeholder="Enter News Title">
+                        <input name="id"type="text" class="form-control" placeholder="Enter Student ID of the Alumni">
                       </div>
                     </div>
                   </div>
@@ -67,7 +67,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Degree</label>
-                        <input name="degree"type="text" class="form-control" placeholder="Enter News Title">
+                        <input name="degree"type="text" class="form-control" placeholder="Enter Degree">
                       </div>
                     </div>
                   </div>
@@ -77,7 +77,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Work Place</label>
-                        <input name="workplace"type="text" class="form-control" placeholder="Enter News Title">
+                        <input name="workplace"type="text" class="form-control" placeholder="Enter Work Place">
                       </div>
                     </div>
                   </div>
@@ -88,7 +88,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Story</label>
-                        <textarea name="story" type="text" class="form-control" rows="3" placeholder="Enter Disc..."></textarea>
+                        <textarea name="story" type="text" class="form-control" rows="3" placeholder="Enter Story..."></textarea>
                       </div>
                     </div>
                   </div>

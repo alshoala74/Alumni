@@ -14,21 +14,22 @@
 
 </head>
 <body>
+
 <!-- <header> -->
 <section>
-        <header class="navs">
-            <img class="logo"src="<?=PATH;?>front/img/header-logo.svg" alt="img">
-            <nav>
-                <ul class="navlink">
-                <li><a href="<?=PATH;?>user/index">Home</a></li>
-                <li><a href="<?=PATH;?>user/alumni">Almunis</a></li>
-                <li><a href="<?=PATH;?>user/jobbord">Job Board</a></li>
-                </ul>
-            </nav>
-            <a href="<?=PATH;?>user/userprofile" >
-            <img class="pfpimgb pfpimg hvr-grow" src="<?=PATH;?>front/img/<?php echo $data->pfp;?>" alt="pfp" onclick="showLogoutPopup()">
-            </a>        
-        </header>
+ <header class="navs">
+      <img class="logo"src="<?=PATH;?>front/img/header-logo.svg" alt="img">
+      <nav>
+        <ul class="navlink">
+            <li><a href="<?=PATH;?>user/index">Alumni Community</a></li>
+            <li><a href="<?=PATH;?>user/alumni">Alumni Directory</a></li>
+            <li><a href="<?=PATH;?>user/jobbord">Job Board</a></li>
+        </ul>
+      </nav>
+      <a href="<?=PATH;?>user/userprofile" >
+      <img class="pfpimgb pfpimg hvr-grow" src="<?=PATH;?>front/img/<?php echo $data->pfp;?>" alt="pfp" onclick="showLogoutPopup()">
+      </a>        
+</header>
 </section>
 <!-- </header> -->
 
@@ -41,13 +42,13 @@
             <h2>Apply</h2>
             <div class="input-container">
               <div class="input">
-                  <h3>Name</h3>
+                  <h3>Name *</h3>
                   <input name="name" id="name" type="text" required>
-                  <h3>Email</h3>
+                  <h3>Email *</h3>
                   <input name="email" id="email" type="email" required>
               </div>
               <div class="input-file">
-              <h3>CV</h3>
+              <h3>CV *</h3>
               <input class="file-input"type="file" name="cv" id="cv" required>
               </div>
             </div>

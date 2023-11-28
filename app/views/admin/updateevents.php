@@ -47,7 +47,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Event Name:</label>
-                        <input name="eventname"type="text" class="form-control" value="<?= $data->eventname; ?>" placeholder="Enter News Title" >
+                        <input name="eventname"type="text" class="form-control" value="<?= $data->eventname; ?>" placeholder="Enter Event Name" >
                       </div>
                     </div>
                   </div>
@@ -58,7 +58,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Place:</label>
-                        <input name="place"type="text" class="form-control" value="<?= $data->place; ?>" placeholder="Enter News Title" >
+                        <input name="place"type="text" class="form-control" value="<?= $data->place; ?>" placeholder="Enter Place" >
                       </div>
                     </div>
                   </div>

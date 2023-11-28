@@ -15,19 +15,19 @@
 
 <!-- <header> -->
 <section>
-        <header class="navs">
-            <img class="logo"src="<?=PATH;?>front/img/header-logo.svg" alt="img">
-            <nav>
-                <ul class="navlink">
-                <li><a href="<?=PATH;?>user/index">Home</a></li>
-                <li><a href="<?=PATH;?>user/alumni">Almunis</a></li>
-                <li><a href="<?=PATH;?>user/jobbord">Job Board</a></li>
-                </ul>
-            </nav>
-            <a href="<?=PATH;?>user/userprofile" >
-            <img class="pfpimgb pfpimg hvr-grow" src="<?=PATH;?>front/img/<?php echo $data->pfp;?>" alt="pfp" onclick="showLogoutPopup()">
-            </a>
-        </header>
+ <header class="navs">
+      <img class="logo"src="<?=PATH;?>front/img/header-logo.svg" alt="img">
+      <nav>
+        <ul class="navlink">
+            <li><a href="<?=PATH;?>user/index">Alumni Community</a></li>
+            <li><a href="<?=PATH;?>user/alumni">Alumni Directory</a></li>
+            <li><a href="<?=PATH;?>user/jobbord">Job Board</a></li>
+        </ul>
+      </nav>
+      <a href="<?=PATH;?>user/userprofile" >
+      <img class="pfpimgb pfpimg hvr-grow" src="<?=PATH;?>front/img/<?php echo $data->pfp;?>" alt="pfp" onclick="showLogoutPopup()">
+      </a>        
+</header>
 </section>
 <!-- </header> -->
     
@@ -41,6 +41,7 @@
                     <div class="profile mt-2 mr-3"><img src="<?=PATH;?>front/img/<?php echo $data->pfp ?>" alt="" width="130" class="rounded-circle mb-2 pfp"></div>
                     <div class="media-body text-white">
                         <h4 class="mt-0 mb-0"><?php echo $data->username ?></h4>
+                        <p class="small mb-0"><?php echo $data->name; ?></p>
                         <p class="small mb-0"><?php echo $data->email; ?></p>
                         <p class="small mb-0"><?php echo $data->id_num; ?></p>
                         <p class="small mb-2"><?php echo $data->major; ?></p>

@@ -8,61 +8,93 @@ body{
     /* scroll-behavior: smooth; */
 }
 
-/*Navbar*/
-.navs{
+/*navs*/
+.navs {
     background-color: white;
     z-index: 3;
-    width: 90%;
-    margin: auto;
-    border-radius:20px ;
-    height: 80px;
-}
-.navs li,a,button{
-    font-family: "Montserrat",sans-serif;
+    height: auto;
+  }
+  
+  .navs li,
+  a,
+  button {
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color:#44474A;
+    color: #44474a;
     text-decoration: none;
     padding: 20px;
-}
-header{
+  }
+  
+  header {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Center the items horizontally */
     align-items: center;
     padding-top: 30px 30%;
-}
-.logo{
-    cursor: pointer;
-    user-select: none;
-    /* margin-right: auto; */
+  }
   
-}
-.navlink{
+  .logo {
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  .navlink {
     list-style: none;
-}
-.navlink li{
-display: inline-block;
-padding: 0px 20px;
-}
-.navlink li a{
+  }
+  
+  .navlink li {
+    display: inline-block;
+    padding: 0px 40px;
+  }
+  
+  .navlink li a {
     transition: all 0.3s ease 0s;
-    
-}
-.navlink li a:hover{
-    color: #D12149;
+  }
+  
+  .navlink li a:hover {
+    color: #d12149;
     text-decoration: none;
-}
-button{
+  }
+  
+  button {
     padding: 9px 25px;
     color: white;
-    background-color: #D12149;
+    background-color: #d12149;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-}
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: left; /* Center the items vertically */
+      padding-top: 20px;
+    }
 
+    .logo{
+        padding-bottom: 20px;
+        align-items: center;
+        margin-left: 40px;
+    }
+  
+    .navlink li {
+        text-align: center;
+      display: block;
+      padding: 10px 0;
+    }
+  
+    button {
+        
+      padding: 7px 20px;
+      margin-left: 40px;
+      margin-top: 10px;
+    }
+  }
 
+  
 /*headcontent*/
 .content{
     color: white;
@@ -81,22 +113,20 @@ button{
 
 /*aboutus*/
 .About-us{
-  background-color: white;
-  padding-top:50px;
-  padding-bottom:50px;
-  margin: auto;
-  display: grid;
-  color: white;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap:20px;
-  
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: center; /* Add this line */
+    align-items: center; /* Add this line */
 }
 
 .abtcnt{
-    margin: auto;
-    
-    padding-left: 30%;
-    width: 90%;
+   justify-content: center;
+    width: 40vw;
 }
 
 .abtcnt h2{
@@ -112,19 +142,38 @@ button{
     font-weight: 500;
     width: 82%;
     line-height: 1.5;
-   
-
 }
 
 .abtimg{
-    margin: auto;
-     margin-left: 20px;
-    width: 450px;
+    width: 500px;
     height: 300px;
-    display: block;
-   
-
 }
+
+
+@media screen and (max-width: 768px) {
+    .abtcnt{
+        margin-left: 40px;
+         width: 70vw;
+         text-align: center;
+     }
+     .abtcnt h2{
+        margin-right: 90px;
+     }
+    .abtcnt p{
+       
+        font-weight: 500;
+        width: 80%;
+        line-height: 1.5;
+    }
+    .abtimg{
+        width: 300px;
+        height: 300px;
+    }
+    
+}
+
+
+
 
 
 /*WhyBenfi*/
@@ -133,16 +182,14 @@ button{
     color: white;
     background-image: url("../img/Why.jpeg");
     background-size:100%  100%;
-    height: 600px;  
+    height: 90vh;  
     background-repeat: no-repeat;
     position: relative;
-    
-    
 }
 .lyr2{
     background-color: rgba(209,33,73,0.7);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    display: flex;
+    flex-wrap: wrap;
     height: 100%;
     width: 80%;
     margin: auto;
@@ -152,6 +199,7 @@ button{
     justify-content: center;
     text-align: center;
     margin: auto;
+    width: 350px;
 }
 
 .it1 a{
@@ -167,12 +215,21 @@ button{
     font-weight: 900;
     color:#44474A;
     line-height:120px;
+    width: 350px;
 }
 .it3{
     justify-content: center;
     text-align: center;
     margin: auto;
-   
+    width: 350px;
+}
+@media screen and (max-width: 768px) {
+    .it2{
+        padding: 20px 0px;
+    }
+    .WhyBenfi{
+        height: 100vh;
+    }
 }
 
 
@@ -186,11 +243,22 @@ button{
     margin: auto;
     /* background-color: red; */
    padding-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    display: flex;
+    flex-wrap:wrap;
     color: white;
     grid-column-gap: 20px;
     
+}
+
+.ABOUTAGENCY{
+    width: 400px;
+}
+.NAVIGATIONLINKS{
+    width: 300px;
+}
+.INSTAFEED{
+    margin-left: 70px;
+    width: 400px;
 }
 
 .cont p{
@@ -217,6 +285,16 @@ ul {
 .lis li{
 margin-left: -50px;
 }
+
+@media screen and (max-width: 768px){
+    .INSTAFEED{
+        margin-left: 0px;
+        
+    }
+}
+
+
+
 
 
 /*last*/

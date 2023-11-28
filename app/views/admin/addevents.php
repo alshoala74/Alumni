@@ -47,7 +47,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Event Name</label>
-                        <input name="eventname"type="text" class="form-control" placeholder="Enter News Title">
+                        <input name="eventname"type="text" class="form-control" placeholder="Enter Event Name">
                       </div>
                     </div>
                   </div>
@@ -58,7 +58,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Place</label>
-                        <textarea name="place" type="text" class="form-control" rows="3" placeholder="Enter Disc..."></textarea>
+                        <textarea name="place" type="text" class="form-control" rows="3" placeholder="Enter Place"></textarea>
                       </div>
                     </div>
                   </div>

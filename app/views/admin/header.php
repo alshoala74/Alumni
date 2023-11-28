@@ -116,13 +116,13 @@
               <li class="nav-item">
                 <a href="<?=PATH;?>/admin/chats" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Chats</p>
+                  <p>Posts</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="<?=PATH;?>/admin/surevy" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Survey</p>
+                  <p>Surveys</p>
                 </a>
               </li>
 

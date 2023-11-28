@@ -16,7 +16,8 @@
 </head>
 <body>  
 
-<header class="navs">
+ <section>
+ <header class="navs">
       <img class="logo"src="<?=PATH;?>front/img/header-logo.svg" alt="img">
       <nav>
         <ul class="navlink">
@@ -28,8 +29,8 @@
         </ul>
       </nav>
       <a href="<?=PATH;?>home/login" class="hvr-grow"><button>Sign-In</button></a>
-
 </header>
+</section>
 
     <div class="container">
     <?php foreach ($news as $new): ?>

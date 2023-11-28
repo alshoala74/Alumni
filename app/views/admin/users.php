@@ -44,6 +44,7 @@
                   <thead>
                     <tr>
                       <th style="width: 10px">User Name</th>
+                      <th style="width: 10px">Name</th>
                       <th style="width:20px;">Password</th>
                       <th style="width:20px;">Student ID</th>
                       <th style="width:270px;">email</th>
@@ -57,6 +58,7 @@
                    <?php foreach($data as $n): ?> 
                     <tr>
                       <td><?= $n['username']?></td>
+                      <td><?= $n['name']?></td>
                       <td><?= $n['password']?></td>
                       <td style="font-size:15px;"><?= $n['id_num']?></td>
                       <td style="font-size:15px;"><?= $n['email']?></td>

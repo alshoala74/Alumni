@@ -7,7 +7,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Chats</h1>
+            <h1>Posts</h1>
             
           </div>
           <div class="col-sm-6">
@@ -27,7 +27,7 @@
 <!-- Default box -->
 <div class="card">
   <div class="card-header">
-    <h3 class="card-title">Chats Database</h3>
+    <h3 class="card-title">Posts Database</h3>
     <div class="card-tools">
       <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
         <i class="fas fa-minus"></i></button>

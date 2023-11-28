@@ -7,71 +7,113 @@ body{
     background-color: #24252A;
     
 }
-
-/*Navbar*/
-.navs{
+/*navs*/
+.navs {
     background-color: white;
     z-index: 3;
-    /* width: 90%; */
-    margin: auto;
-    /* border-radius:20px ; */
-    height: 80px;
-}
-.navs li,a,button{
-    font-family: "Montserrat",sans-serif;
+    height: auto;
+    justify-content: space-between;
+    padding: 0px 150px;
+  }
+  
+  .navs li,
+  a,
+  button {
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color:#44474A;
+    color: #44474a;
     text-decoration: none;
-    padding: 20px;
-}
-header{
+    
+  }
+  
+  header {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Center the items horizontally */
     align-items: center;
     padding-top: 30px 30%;
-}
-.logo{
-    cursor: pointer;
-    user-select: none;
-    /* margin-right: auto; */
-  
-}
-.navlink{
-    list-style: none;
-}
-.navlink li{
-display: inline-block;
-padding: 0px 20px;
-}
-.navlink li a{
-    transition: all 0.3s ease 0s;
-    
-}
-.navlink li a:hover{
-    color: #D12149;
-    text-decoration: none;
-}
-button{
-    padding: 9px 25px;
-    color: white;
-    background-color: #D12149;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    margin-left: 80px;
-}
-
-.pfpimg{
-  width: 50px;
-  margin: 10px;
-}
-
-.pfpimgb{
-    border-radius: 50%;
-    border: solid 2px #D12149 ;
   }
+  
+  .logo {
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  .navlink {
+    list-style: none;
+  }
+  
+  
+  
+  .navlink li {
+    display: inline-block;
+    padding: 0px 40px;
+  }
+  
+  .navlink li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .navlink li a:hover {
+    color: #d12149;
+    text-decoration: none;
+  }
+  
+  
+  
+  
+  .pfpimg{
+      width: 50px;
+      margin: 10px;
+  }
+    
+  .pfpimgb{
+        border-radius: 50%;
+        border: solid 2px #D12149 ;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: left; /* Center the items vertically */
+      padding-top: 20px;
+    }
+  
+    .logo{
+        padding-bottom: 20px;
+        align-items: center;
+        margin-left: 40px;
+    }
+  
+    .navlink li {
+        text-align: center;
+      display: block;
+      padding: 10px 0;
+    }
+  
+    button {
+        
+      padding: 7px 20px;
+      margin-left: 40px;
+      margin-top: 10px;
+    }
+    .pfpimg{
+     margin-left: 40px;
+  }
+    
+  }
+
+button{
+        padding: 9px 25px;
+        color: white;
+        background-color: #d12149;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+}
+
 
 
 
@@ -101,6 +143,7 @@ button{
 }
 
 .it2{
+    
     margin-top: 50px;
     background-color: #24252A;
      /* position: sticky; */
@@ -109,41 +152,12 @@ button{
 
 
 
-
-
-
-
-
-
-
-
-.comm{
-    width: 100%;
-    height: 100%; 
-
-    /* background-color: #e7effd;  */
-}
 .inpfile{
 display: none;
 }
-.label{
-    margin: 20px;
-    height: 150px;
-    width: 250px;
-    border-radius: 6px;
-    border: 2px dashed #D12149;
-    margin: auto;
-    justify-content: center;
-    text-align: center;
-    color: #D12149;
-    padding: 50px;
-}
 
 
-.label:hover{
-    color:gray;
-    border: 2px dashed #777;
-}
+
 
 .posthead{
     margin: auto;
@@ -166,9 +180,7 @@ display: none;
     color: #D12149;
 }
 
-.postrect:hover{
-    color:#D12149;
-}
+
 
 .hidden {
     display: none;
@@ -184,4 +196,32 @@ display: none;
 .it3 img{
     max-height: 200px;
 }
+
+
+/*----------------new-----------------*/
+.containers {
+    grid-template-columns: 1fr 600px;
+  }
+  
+  /* For screens smaller than 768px */
+  @media (max-width: 768px) {
+    .containers {
+      grid-template-columns: 1fr;
+    }
+
+    .it2 .container{
+        height: auto;
+        width: auto;
+    }
+    .container p,.evname{
+        width: 240px;
+    }
+
+    .it1,.it3,.it2{
+        width: 390px;
+    }
+  
+    
+  }
+
 

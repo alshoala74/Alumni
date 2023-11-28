@@ -47,7 +47,16 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>User Name</label>
-                        <input name="username"type="text" class="form-control" placeholder="Enter News Title">
+                        <input name="username"type="text" class="form-control" placeholder="Enter User Name">
+                      </div>
+                    </div>
+                  </div>
+                <!-- text input -->
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Name</label>
+                        <input name="name"type="text" class="form-control" placeholder="Enter Name">
                       </div>
                     </div>
                   </div>
@@ -57,7 +66,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>email</label>
-                        <input name="email"type="email" class="form-control" placeholder="Enter News Title">
+                        <input name="email"type="email" class="form-control" placeholder="Enter Email">
                       </div>
                     </div>
                   </div>
@@ -66,7 +75,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>major</label>
-                        <input name="major"type="text" class="form-control" placeholder="Enter News Title">
+                        <input name="major"type="text" class="form-control" placeholder="Enter Major">
                       </div>
                     </div>
                   </div>
@@ -76,7 +85,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>Student ID</label>
-                        <input name="id_num"type="text" class="form-control" placeholder="Enter News Title">
+                        <input name="id_num"type="text" class="form-control" placeholder="Enter Student ID">
                       </div>
                     </div>
                   </div>
@@ -86,7 +95,7 @@
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label>password</label>
-                        <input name="password"type="password" class="form-control" placeholder="Enter News Title">
+                        <input name="password"type="password" class="form-control" placeholder="Enter Password">
                       </div>
                     </div>
                   </div>

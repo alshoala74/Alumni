@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 
 body{
@@ -9,59 +10,94 @@ body{
     /* scroll-behavior: smooth; */
 }
 
-/*Navbar*/
-.navs{
+
+/*navs*/
+.navs {
   background-color: white;
   z-index: 3;
-  width: 90%;
-  margin: auto;
-  border-radius:20px ;
-  height: 80px;
+  height: auto;
 }
-.navs li,a,button{
-  font-family: "Montserrat",sans-serif;
+
+.navs li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color:#44474A;
+  color: #44474a;
   text-decoration: none;
   padding: 20px;
 }
-header{
+
+header {
   display: flex;
-  justify-content: space-around;
+  justify-content: center; /* Center the items horizontally */
   align-items: center;
   padding-top: 30px 30%;
 }
-.logo{
-  cursor: pointer;
-  user-select: none;
-  /* margin-right: auto; */
 
+.logo {
+  cursor: pointer;
+  align-items: center;
 }
-.navlink{
+
+.navlink {
   list-style: none;
 }
-.navlink li{
-display: inline-block;
-padding: 0px 20px;
+
+.navlink li {
+  display: inline-block;
+  padding: 0px 40px;
 }
-.navlink li a{
+
+.navlink li a {
   transition: all 0.3s ease 0s;
-  
 }
-.navlink li a:hover{
-  color: #D12149;
+
+.navlink li a:hover {
+  color: #d12149;
   text-decoration: none;
 }
-header button{
+
+button {
   padding: 9px 25px;
   color: white;
-  background-color: #D12149;
+  background-color: #d12149;
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: left; /* Center the items vertically */
+    padding-top: 20px;
+  }
+
+  .logo{
+      padding-bottom: 20px;
+      align-items: center;
+      margin-left: 40px;
+  }
+
+  .navlink li {
+      text-align: center;
+    display: block;
+    padding: 10px 0;
+  }
+
+  button {
+      
+    padding: 7px 20px;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+}
+
+
 
 .container{
   margin-top: 40px;
@@ -73,8 +109,7 @@ header button{
   display: grid;
   grid-gap: 2rem;
 
-  grid-template-rows:repeat(2,300px) ;
-  grid-template-columns: repeat(3,1fr);
+  
 
   grid-template-areas: 
   "item-1 item-1 item-2 "
@@ -92,10 +127,6 @@ header button{
 .container .item:nth-child(2){grid-area: item-2;}
 .container .item:nth-child(5){grid-area: item-5;}
 
- /* .item-3{grid-area: item-3;} */
-/* .item-4{grid-area: item-4;}  */
-
-
 
 .item{
 
@@ -112,9 +143,6 @@ header button{
   width: 100%;
   height: 100%;
 }
-
-
-
 .container p {
   color: white;
   font-weight: bold;
@@ -123,8 +151,21 @@ header button{
   margin: 20px;
   -webkit-text-stroke: 0.5px black; 
 }
-
 span{
   color: rgba(255, 255, 255, 0.7);
-  font-size: 0.9vw;
+  font-size: 1vw;
+}
+
+@media screen and (max-width: 768px){
+  
+.container{
+  grid-template-columns: repeat(1,1fr);
+  grid-template-areas: 
+  "item-1 "
+  "item-2 ";
+}
+span{
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 4vw;
+}
 }

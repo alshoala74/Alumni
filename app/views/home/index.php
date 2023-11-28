@@ -16,6 +16,7 @@
 </head>
 <body>
 
+ 
  <!--header-->
  <section>
  <header class="navs">
@@ -30,8 +31,9 @@
         </ul>
       </nav>
       <a href="<?=PATH;?>home/login" class="hvr-grow"><button>Sign-In</button></a>
+</header>
+</section>
 
-    </header>
 
     <div>
       <div class="container text-center content d-flex justify-content-center align-items-center content">
@@ -131,7 +133,7 @@
     </div>
 
 
-    <div class="INSTAFEED ">
+    <div class="accounts ">
       
       <ul class="text-left pl-0">
       <li class="mb-2">

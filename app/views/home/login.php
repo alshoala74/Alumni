@@ -28,21 +28,22 @@
 
 </head>
 <body>
-    <section>
-        <header class="navs">
-             <img class="logo"src="<?=PATH;?>front/img/header-logo.svg" alt="img">
-            <nav>
-                <ul class="navlink">
-                <li><a href="<?=PATH;?>home">Home</a></li>
-                <li><a href="<?=PATH;?>home/news">News</a></li>
-                <li><a href="<?=PATH;?>home/sucess">Success Stories</a></li>
-                <li><a href="<?=PATH;?>home/events">Events</a></li>
-                <li><a href="<?=PATH;?>home/more">More</a></li>
-                </ul>
-            </nav>
-            <a class="hvr-grow"href="#"><button>Sign-In</button></a>
-        </header>
-    </section>
+ <!--header-->
+ <section>
+ <header class="navs">
+      <img class="logo"src="<?=PATH;?>front/img/header-logo.svg" alt="img">
+      <nav>
+        <ul class="navlink">
+          <li><a href="<?=PATH;?>home">Home</a></li>
+          <li><a href="<?=PATH;?>home/news">News</a></li>
+          <li><a href="<?=PATH;?>home/sucess">Success Stories</a></li>
+          <li><a href="<?=PATH;?>home/events">Events</a></li>
+          <li><a href="<?=PATH;?>home/more">More</a></li>
+        </ul>
+      </nav>
+      <a href="<?=PATH;?>home/login" class="hvr-grow"><button>Sign-In</button></a>
+</header>
+</section>
 
     <!--Login-->  
     <!--Login-->

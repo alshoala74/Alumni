@@ -13,25 +13,27 @@
 </head>
 <body>
 <!-- <header> -->
-    <section>
-        <header class="navs">
-        <img class="logo"src="<?=PATH;?>front/img/header-logo.svg" alt="img">
-            <nav>
-                <ul class="navlink">
-                <li><a href="<?=PATH;?>user/index">Home</a></li>
-                <li><a href="<?=PATH;?>user/alumni">Almunis</a></li>
-                <li><a href="<?=PATH;?>user/jobbord">Job Board</a></li>
-                </ul>
-            </nav>
-            <a href="<?=PATH;?>user/userprofile" >
-            <img class="pfpimgb pfpimg hvr-grow" src="<?=PATH;?>front/img/<?php echo $data->pfp;?>" alt="pfp" onclick="showLogoutPopup()">
-            </a>        
-        </header>
-    </section>
+
+
+<section>
+ <header class="navs">
+      <img class="logo"src="<?=PATH;?>front/img/header-logo.svg" alt="img">
+      <nav>
+        <ul class="navlink">
+            <li><a href="<?=PATH;?>user/index">Alumni Community</a></li>
+            <li><a href="<?=PATH;?>user/alumni">Alumni Directory</a></li>
+            <li><a href="<?=PATH;?>user/jobbord">Job Board</a></li>
+        </ul>
+      </nav>
+      <a href="<?=PATH;?>user/userprofile" >
+      <img class="pfpimgb pfpimg hvr-grow" src="<?=PATH;?>front/img/<?php echo $data->pfp;?>" alt="pfp" onclick="showLogoutPopup()">
+      </a>        
+</header>
+</section>
 <!-- </header> -->
 <div class="cont">
         <div class="search-wrapper"> 
-                    <label for="search">Search Job</label>
+                    <label for="search">Search Job Board</label>
                     <h3>Enter Degree</h3>
                <div class="body2">
                <div class="box">
@@ -50,7 +52,7 @@
                 <h4><?php echo $jobs['companyname'];?><br><?php echo $jobs['place'];?>
                 <br><span degree><?php echo $jobs['degree'];?></span></h4>
                 <p> <?php echo nl2br($jobs['disc']);?></p>
-                <button ><a style="color:white;"href="<?=PATH;?>user/apply/<?php echo $jobs['id'];?>">Apply Job</a></button>
+                <button ><a style="color:white;"href="<?=PATH;?>user/apply/<?php echo $jobs['id'];?>">Apply</a></button>
             </div>
         <?php endforeach; ?>
         

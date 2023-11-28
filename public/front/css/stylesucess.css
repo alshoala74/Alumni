@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 /* * {
     box-sizing: border-box;
   } */
@@ -9,64 +9,98 @@
     
   } 
 
-/*Navbar*/
-.navs{
-    background-color: white;
-    z-index: 3;
-    width: 90%;
-    margin: auto;
-    border-radius:20px ;
-    height: 80px;
+/*navs*/
+.navs {
+  background-color: white;
+  z-index: 3;
+  height: auto;
 }
-.navs li,a,button{
-    font-family: "Montserrat",sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color:#44474A;
-    text-decoration: none;
-    padding: 20px;
+
+.navs li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #44474a;
+  text-decoration: none;
+  padding: 20px;
 }
-header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 30px 30%;
+
+header {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center;
+  padding-top: 30px 30%;
 }
-.logo{
-    cursor: pointer;
-    /* margin-right: auto; */
-    user-select: none;
+
+.logo {
+  cursor: pointer;
+  align-items: center;
 }
-.navlink{
-    list-style: none;
+
+.navlink {
+  list-style: none;
 }
-.navlink li{
-display: inline-block;
-padding: 0px 20px;
+
+.navlink li {
+  display: inline-block;
+  padding: 0px 40px;
 }
-.navlink li a{
-    transition: all 0.3s ease 0s;
-    
+
+.navlink li a {
+  transition: all 0.3s ease 0s;
 }
-.navlink li a:hover{
-    color: #D12149;
-    text-decoration: none;
+
+.navlink li a:hover {
+  color: #d12149;
+  text-decoration: none;
 }
-button{
-    padding: 9px 25px;
-    color: white;
-    background-color: #D12149;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+
+button {
+  padding: 9px 25px;
+  color: white;
+  background-color: #d12149;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: left; /* Center the items vertically */
+    padding-top: 20px;
+  }
+
+  .logo{
+      padding-bottom: 20px;
+      align-items: center;
+      margin-left: 40px;
+  }
+
+  .navlink li {
+      text-align: center;
+    display: block;
+    padding: 10px 0;
+  }
+
+  button {
+      
+    padding: 7px 20px;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
 }
 
 
  
   
-  .container {
-    display: grid;
+.container {
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(3,1fr);
     margin:auto;
     
@@ -78,7 +112,7 @@ button{
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
-    
+    width: 350px;
     
   }
   
@@ -118,4 +152,10 @@ button{
     margin-top: 0;
     font-size: 1vw;
     color: rgba(0, 0, 0, 0.6);
+  }
+
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
   }

@@ -41,10 +41,10 @@
                 <?php } ?>
             </div>
             <div class="input-Email">
-                <input name="name" id="name" type="name" required><label>Name  <i class="lnr lnr-user"></i></label>
+                <input name="name" id="name" type="name" required><label>Username<i class="lnr lnr-user"></i></label>
             </div>
             <div class="input-password">
-                <input name="password" id="password" type="password" required><label>Password <i class="lnr lnr-lock"></i></label>
+                <input name="password" id="password" type="password" required><label>Password<i class="lnr lnr-lock"></i></label>
             </div>
             <div class="remember-forget">
               

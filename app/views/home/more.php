@@ -16,9 +16,10 @@
 <body>
 
  <!--header-->
+ <!--header-->
  <section>
  <header class="navs">
-        <img class="logo"src="<?=PATH;?>front/img/header-logo.svg" alt="img">
+      <img class="logo"src="<?=PATH;?>front/img/header-logo.svg" alt="img">
       <nav>
         <ul class="navlink">
           <li><a href="<?=PATH;?>home">Home</a></li>
@@ -29,8 +30,8 @@
         </ul>
       </nav>
       <a href="<?=PATH;?>home/login" class="hvr-grow"><button>Sign-In</button></a>
-
-    </header>
+</header>
+</section>
     <section class="content">
       <div class="lyr">
         <div class="container text-center content d-flex justify-content-center align-items-center content">
@@ -46,18 +47,14 @@
 </section>
 
 
-  <div class="container">
+<div class="container">
   <?php foreach($servay as $serv): ?>
         <div class="item item1">
             <h2><?php echo $serv['survey_name'];?></h2>
             <p><?php echo $serv['survey_description'];?></p>
             <button ><a style="color:white;"href="<?=PATH;?>home/servay/<?php echo $serv['survey_id'];?>">Start</a></button>
         </div>
-<?php endforeach; ?>
-
-
-    
-    
+<?php endforeach; ?> 
 </div>
 
 
